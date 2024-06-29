@@ -1,0 +1,82 @@
+<html>
+  <head>
+    <style>
+.traffic-light-pole {
+  position: relative;
+  width: 80px;
+  height: 200px;
+  background-color: #151414;
+  border-radius: 20px;
+  margin: 20px auto;
+}
+
+.pole {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 200%;
+  background-color: #101010;
+  border-radius: 5px;
+}
+
+.traffic-light {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 120px;
+  background-color: #131212;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.light {
+  width: 30px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.red {
+  background-color: #ff0000;
+}
+
+.yellow {
+  background-color: #ffff00;
+}
+
+.green {
+  background-color: #00ff00;
+}
+.ground{
+  position: absolute;
+  top:300px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 70%;
+  background-color: #101010;
+  border-radius: 5px;
+ 
+
+}
+    </style>
+  </head>
+  <body>
+    <div class="traffic-light-pole">
+  <div class="pole"></div>
+  <div class="traffic-light">
+    <div class="light red">stop</div>
+    <div class="light yellow">wait</div>
+    <div class="light green">Go</div>
+    <div class="ground"></div>
+  </div>
+</div>
+</body>
+</html>
